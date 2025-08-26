@@ -20,7 +20,9 @@ export function WhyUs() {
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
+
       </div>
+
     </section>
   );
 }
