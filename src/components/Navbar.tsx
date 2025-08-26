@@ -73,8 +73,6 @@ export function NavbarComplete() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-
-      {/* Navbar */}
     </div>
   );
 }

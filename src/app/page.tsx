@@ -1,13 +1,21 @@
+
+
+import BrandAwareness from "@/sections/BrandAwareness";
 import Hero from "@/sections/Hero";
+import { WhyUs } from "@/sections/WhyUs";
+
+
+
 export default function Home() {
+
   return (
     <>
       <section>
 
         <Hero />
-        <div className="h-1 text-center justify-center p-20">
-          Dummy text
-        </div>
+        <BrandAwareness />
+
+        <WhyUs />
       </section>
     </>
   );

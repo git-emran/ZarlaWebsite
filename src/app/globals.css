@@ -22,3 +22,36 @@
   --color-badge-red-text: #752522;
   --color-badge-yellow-text: #73321b;
 }
+
+@layer utilities {
+  .bg-gradient-smart-dark {
+    background: linear-gradient(
+      135deg,
+      #0f0f0f 0%,
+      #2a2a2a 25%,
+      #1a1a1a 50%,
+      #404040 75%,
+      #0a0a0a 100%
+    );
+  }
+
+  .bg-gradient-carbon-fiber {
+    background: linear-gradient(
+      120deg,
+      #121212 0%,
+      #2d2d2d 35%,
+      #1f1f1f 65%,
+      #383838 100%
+    );
+  }
+  .bg-gradient-arctic-steel {
+    background: linear-gradient(
+      135deg,
+      #00bfff 0%,
+      #c0c0c0 25%,
+      #4dd0e1 50%,
+      #e8e8e8 75%,
+      #0288d1 100%
+    );
+  }
+}

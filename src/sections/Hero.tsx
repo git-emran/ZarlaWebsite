@@ -1,6 +1,7 @@
 'use client'
 import React, { FC } from "react";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 /**
  * HeroCarCare
@@ -64,7 +65,7 @@ const Hero: FC = () => {
             className="font-extrabold leading-[0.9] tracking-normal text-center text-white"
             style={{ fontSize: "clamp(48px, 10vw, 90px)" }}
           >
-            Expert Car Detailing Services in Sydney
+            Expert Car Detailing Services in <span className="text-lime-200">Sydney.</span>
           </motion.h1>
         </header>
 
@@ -79,7 +80,7 @@ const Hero: FC = () => {
           {/* Copy card */}
           <motion.article
             variants={fadeUp}
-            className="rounded-[28px] border border-black/5 bg-[#FBFFD0] p-10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
+            className="rounded-[28px] border border-black/5 bg-[#E3FFC2] p-10 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.15)]"
           >
             <p className="max-w-prose text-lg leading-8 text-neutral-800">At Sydney Pro Detailers, we specialize in transforming your vehicle into a pristine masterpiece. Our expert car detailing services cater to all makes and models, ensuring that your car receives the attentive care it deserves.Our cost-effective packages go well beyond a basic wash, pampering your vehicle with interior and exterior detailing that leaves it looking and feeling brand new.</p>
 
@@ -101,11 +102,12 @@ const Hero: FC = () => {
             variants={scaleIn}
             className="relative overflow-hidden rounded-[28px] bg-neutral-200 shadow-[0_12px_40px_-16px_rgba(0,0,0,0.35)]"
           >
-            {/* Note: replace the src with your local asset if desired. */}
-            <img
-              src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=2000&auto=format&fit=crop"
+            <Image
+              src="/assets/hero-car.jpg"
               alt="Sleek car in a sunlit detailing studio"
               className="h-full w-full object-cover"
+              height="500"
+              width="500"
             />
             <figcaption className="sr-only">A modern electric car inside a bright studio, representing premium detailing.</figcaption>
           </motion.figure>
