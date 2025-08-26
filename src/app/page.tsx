@@ -1,8 +1,14 @@
-
+import Hero from "@/sections/Hero";
 export default function Home() {
   return (
     <>
-      <h1 className="text-amber-600">Hello Zarla</h1>
+      <section>
+
+        <Hero />
+        <div className="h-1 text-center justify-center p-20">
+          Dummy text
+        </div>
+      </section>
     </>
   );
 }
