@@ -3,13 +3,6 @@ import React, { FC } from "react";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
-/**
- * HeroCarCare
- * A polished, accessible, and responsive hero section that mirrors the provided design.
- * - TailwindCSS + TypeScript + React + Framer Motion
- * - Semantic HTML tags
- * - Optimized for readability and reuse
- */
 
 const container: Variants = {
   hidden: { opacity: 0 },
