@@ -4,6 +4,8 @@ This is a single page static site, as a part of the assignment this has semantic
 
 > Submitted by Emran H
 
+[View My Assignment Live](https://zarla-website.vercel.app/)
+
 # Tech Stack
 
 Next.js, Typescript, Tailwind-CSS, Node.js runtime
