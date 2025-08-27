@@ -6,6 +6,9 @@ This is a single page static site, as a part of the assignment this has semantic
 
 [View My Assignment Live](https://zarla-website.vercel.app/)
 
+<img width="2992" height="1456" alt="Screenshot 2025-08-27 at 10 36 24 AM" src="https://github.com/user-attachments/assets/998e6b94-abfe-402d-a87d-7e3b4b310ecc" />
+
+
 # Tech Stack
 
 Next.js, Typescript, Tailwind-CSS, Node.js runtime
