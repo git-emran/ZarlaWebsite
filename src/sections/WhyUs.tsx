@@ -53,26 +53,26 @@ const Feature = ({
         className={cn(
           "absolute inset-0 h-full w-full pointer-events-none transition-opacity duration-200 opacity-0",
           isTopRow
-            ? "group-hover/feature:opacity-100 bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent"
-            : "group-hover/feature:opacity-100 bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent"
+            ? "group-hover/feature:opacity-100 bg-gradient-to-t from-neutral-100 dark:from-neutral-200 to-transparent"
+            : "group-hover/feature:opacity-100 bg-gradient-to-b from-neutral-100 dark:from-neutral-200 to-transparent"
         )}
       />
 
       {/* Icon */}
-      <header className="relative z-10 mb-4 px-10 text-neutral-600 dark:text-neutral-400">
+      <header className="relative z-10 mb-4 px-10 text-neutral-600 dark:text-black">
         {icon}
       </header>
 
       {/* Title */}
       <h3 className="relative z-10 mb-2 px-10 text-lg font-bold">
         <span className="absolute left-0 inset-y-0 h-6 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 group-hover/feature:h-8 transition-all duration-200 origin-center" />
-        <span className="inline-block transition-transform duration-200 group-hover/feature:translate-x-2 text-neutral-800 dark:text-neutral-100">
+        <span className="inline-block transition-transform duration-200 group-hover/feature:translate-x-2 text-neutral-800 dark:text-black">
           {title}
         </span>
       </h3>
 
       {/* Description */}
-      <p className="relative z-10 px-10 max-w-xs text-sm text-neutral-600 dark:text-neutral-300">
+      <p className="relative z-10 px-10 max-w-xs text-sm text-neutral-900 dark:text-black">
         {description}
       </p>
     </article>
