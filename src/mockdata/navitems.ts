@@ -1,19 +1,19 @@
 export const navItems = [
   {
     name: "Home",
-    link: "#features",
+    link: "#home",
   },
   {
     name: "Services",
-    link: "#pricing",
+    link: "#services",
   },
   {
     name: "Why Us",
-    link: "#contact",
+    link: "#why-us",
   },
   {
     name: "Our Work",
-    link: "#features",
+    link: "#our-work",
   },
   {
     name: "About Us",
@@ -21,10 +21,10 @@ export const navItems = [
   },
   {
     name: "Reviews",
-    link: "#features",
+    link: "#reviews",
   },
   {
     name: "FAQ's",
-    link: "#features",
+    link: "#faq",
   },
 ];
