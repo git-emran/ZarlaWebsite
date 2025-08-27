@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assignment Info & What's Next
 
-## Getting Started
+This is a single page static site, as a part of the assignment this has semantic tags, type-safe functions in React, Typescript environment.
 
-First, run the development server:
+> Submitted by Emran H
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js, Typescript, Tailwind-CSS, Node.js runtime
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The UI is split into modular parts. For example, Using atomic design principle, atoms are in the UI folder, organisms are in the Components folder, and templates are in the Sections folder.
 
-## Learn More
+#### What's missing & What's next ?
 
-To learn more about Next.js, take a look at the following resources:
+Let's talk about what is missing from a High level POV:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Security & Compliance**
+  Security can be hardened via X-Content-Type-Options, X-Frame-Options, XSS protection, CSRF, Referrer Policy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Auth layer**
+  O-Auth, Clerk, Next-Auth etc. can be easy to implement auth layer.
 
-## Deploy on Vercel
+- **Dependencies and Supply Chain**
+  Freezing lock file in CI to avoid supply chain drift, enabling dependabot etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Data layer**
+  Basically a database is missing.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Now let's assume all of the above has been implemented. What are the next steps to make it production ready ?
+
+- **Unit Testing**
+  Comprehensive testing of the pure funcitons. For example: Vitest, Jest etc.
+
+- **SEO and Analytics**
+  Fill in the metadata, next-sitemap, Google Analytics etc.
+
+- **Accessibility**
+  Although semantic tags are being used, there is room for ARIA attributes.
+
+- **Performance**
+  Avoiding unbounded server components doing client only work, add a bundle analyzer to catch large deps etc.
